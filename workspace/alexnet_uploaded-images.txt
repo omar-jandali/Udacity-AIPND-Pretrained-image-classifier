@@ -1,0 +1,66 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                       dog 
+ 2 key:              Basketball_01.jpg  label:                basketball 
+ 3 key:                     Owl_01.jpg  label:                       owl 
+ 4 key:                     Dog_02.jpg  label:                       dog 
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+             Basketball_01.jpg: 
+Real:                basketball    Classifier:                     basketball
+
+                    Dog_02.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+                    Owl_01.jpg: 
+Real:                       owl    Classifier:                      ptarmigan
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+found
+found
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             Basketball_01.jpg: 
+Real:                basketball    Classifier:                     basketball  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                       dog    Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    Owl_01.jpg: 
+Real:                       owl    Classifier:                      ptarmigan  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+create stats dict
+results stats dic: {'n_images': 4, 'n_dogs_img': 2, 'n_notdogs_img': 2, 'n_correct_dog': 2, 'n_correct_non_dog': 2, 'n_correct_breed_matches': 2, 'n_label_matches': 3, 'pct_correct_dogs': 100.0, 'pct_correct_notdogs': 100.0, 'pct_correct_breed': 100.0, 'pct_label_matches': 75.0}
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+print_results stats_dic: {'n_images': 4, 'n_dogs_img': 2, 'n_notdogs_img': 2, 'n_correct_dog': 2, 'n_correct_non_dog': 2, 'n_correct_breed_matches': 2, 'n_label_matches': 3, 'pct_correct_dogs': 100.0, 'pct_correct_notdogs': 100.0, 'pct_correct_breed': 100.0, 'pct_label_matches': 75.0}
+
+** Total Elapsed Runtime: 0:0:0
